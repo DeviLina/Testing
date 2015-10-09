@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+Home 2
+</title>
+ <style>
+ body{
+ background:#999999;}
+   figure {
+    background: #8a8a57; /* Цвет фона */
+    padding: 10px; /* Поля вокруг */
+    display: block; /* Блочный элемент */
+    float: left; /* Блоки выстраиваются по горизонтали */
+    margin: 0 10px 10px 0; /* Отступы */
+    text-align: center; /* Выравнивание по центру */
+   }
+   figcaption {
+    color: #fff; /* Цвет текста */
+   }
+   button{
+   background:#8a8a57;
+   border:0;
+   font-size:20px;}
+ 
+</style>
+</head>
+<body>
+	<figure>
+		<p><img id="1" src="1.jpg"></p>
+		<figcaption>1</figcaption>
+	</figure>
+	<figure>
+		<p><img id="2" src="2.jpg"></p>
+		<figcaption>2</figcaption>
+	</figure>
+	<figure>
+		<p><img id="3" src="3.jpg"></p>
+		<figcaption>3</figcaption>
+	</figure>
+	<figure>
+		<p><img id="4" src="4.jpg"></p>
+		<figcaption>4</figcaption>
+	</figure>
+	
+	
+	<label for="number1">
+		Картинку №<input type="number" id="myNumber1" name="myNumber1"/>
+	</label>
+	<label for="number2">
+		заменить на №<input type="number" id="myNumber2" name="myNumber2"/>
+	</label>
+	<button id="swap">Поменять</button>
+	
+	<script>
+		var Img1=document.getElementById("1");
+		var Img2=document.getElementById("2");
+		var Img3=document.getElementById("3");
+		var Img4=document.getElementById("4");
+	
+		function mySwap(){
+		var mySrc=document.getElementById("1);
+		mySrc.src="01530001.JPG";}
+		var myButton=document.getElementById("myClick");
+		myButton.addEventListener("click", mySwap);
+	</script> 
+</body>
+</html>
